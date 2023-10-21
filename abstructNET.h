@@ -1,6 +1,5 @@
 #pragma once
-#include <array>
-#include <vector>
+#include <cstring>
 
 class abstructNET
 {
@@ -9,7 +8,7 @@ private:
 
 public:
 	abstructNET(char* mac_address) {
-		if (end(mac_address) - begin(mac_address) == 12)
+		if (strlen(mac_address) == 12)
 		{
 			for (int i = 0; i < 12; i++)
 			{
